@@ -40,7 +40,7 @@ function Daignose({ navigation, route }) {
             <ActionCards
               marginTop={hp(15)}
               onPress={() => {
-                if (index === 1) {
+                if (index === 0) {
                   setProblem(item.name);
                 } else {
                   toast.show('Coming soon')
