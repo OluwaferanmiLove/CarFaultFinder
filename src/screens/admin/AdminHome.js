@@ -78,7 +78,7 @@ function AdminHome ({navigation}) {
             marginTop={hp(15)}
             onPress={() => navigation.navigate('PreviousDiagnosis')}
             title={'Previous Diagnosis'}
-            value={15}
+            value={2}
           />
           {/* <ActionCards
             color={'#a14556'}
