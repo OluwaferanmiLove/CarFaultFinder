@@ -45,7 +45,7 @@ function Daignose({ navigation, route }) {
         </ScrollView>
       )}
       {problem === 'carStartProblem' && (
-        <CarStartProblem navigation={navigation} />
+        <CarStartProblem navigation={navigation} setProblem={setProblem} />
       )}
     </SafeAreaView>
   )

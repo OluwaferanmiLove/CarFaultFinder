@@ -4,6 +4,7 @@ import AUHighSchool from "./src/navigation";
 import { initializeApp } from "firebase/app";
 import { colors } from "./src/constants/colors";
 import { hp } from "./src/util/dimension";
+import { deleteFromStorage } from "./src/util/storageUtil";
 
 export default function App() {
   const firebaseConfig = {

@@ -16,7 +16,7 @@ import { carStartProblemQuestion, diagnosis } from '../../constants/constants';
 import ActionCards from './components/ActionCards';
 import Modal from "react-native-modal";
 
-function CarStartProblem({ navigation }) {
+function CarStartProblem({ navigation, setProblem }) {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [reRender, setReRender] = useState(0);
   const [answers, setAnswer] = useState([]);
@@ -25,6 +25,7 @@ function CarStartProblem({ navigation }) {
 
   const prevQuestion = () => {
     if (questionIndex === 0) {
+      setProblem(null)
       return
     }
 
