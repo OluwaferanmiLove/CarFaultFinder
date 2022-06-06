@@ -21,6 +21,8 @@ function Daignose({ navigation, route }) {
   // const [student, setStudents] = useState([]);
   const [problem, setProblem] = useState(null);
 
+  const toast = useToast();
+
   return (
     <SafeAreaView style={styles.main}>
       {problem === null && (
@@ -37,7 +39,13 @@ function Daignose({ navigation, route }) {
           {diagnosis.map((item, index) => (
             <ActionCards
               marginTop={hp(15)}
-              onPress={() => setProblem(item.name)}
+              onPress={() => {
+                if (index === 1) {
+                  setProblem(item.name);
+                } else {
+                  toast.show('Coming soon')
+                }
+              }}
               title={'New Diagonosis for problem:'}
               value={item.title}
               iconName={'settings-outline'} />

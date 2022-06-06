@@ -4,16 +4,16 @@ export const diagnosis = [
     title: 'Car Start',
     name: 'carStartProblem'
   },
-  // {
-  //   id: 'dscdfvrwvfv245recd',
-  //   title: 'Brake',
-  //   name: 'brakeProblem'
-  // },
-  // {
-  //   id: 'sdcsdvcrefvdcr',
-  //   title: 'Cooling System',
-  //   name: 'coolingSystemProblem'
-  // },
+  {
+    id: 'dscdfvrwvfv245recd',
+    title: 'Brake',
+    name: 'brakeProblem'
+  },
+  {
+    id: 'sdcsdvcrefvdcr',
+    title: 'Cooling System',
+    name: 'coolingSystemProblem'
+  },
 ]
 
 export const carStartProblemQuestion = [
