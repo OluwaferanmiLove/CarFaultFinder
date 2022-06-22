@@ -1,6 +1,6 @@
 import { ToastProvider } from "react-native-toast-notifications";
 import AppContextProvider from "./src/context/AppContext";
-import AUHighSchool from "./src/navigation";
+import CarFaultFinder from "./src/navigation";
 import { initializeApp } from "firebase/app";
 import { colors } from "./src/constants/colors";
 import { hp } from "./src/util/dimension";
@@ -41,7 +41,7 @@ export default function App() {
         //   ),
         // }}
         swipeEnabled={true}>
-        <AUHighSchool />
+        <CarFaultFinder />
       </ToastProvider>
     </AppContextProvider>
   );

@@ -21,11 +21,7 @@ export default function AdminNav() {
           backgroundColor: colors.mainBg
         }
       }}>
-        {/* <AdminStack.Screen component={AdminLogin} name={'AdminLogin'} /> */}
         <AdminStack.Screen component={AdminHome} name={'AdminHome'} />
-        <AdminStack.Screen component={AdminList} name={'AdminList'} />
-        {/* <AdminStack.Screen component={StudentList} name={'StudentList'} /> */}
-        <AdminStack.Screen component={TeacherList} name={'TeacherList'} />
     </AdminStack.Navigator>
   );
 }

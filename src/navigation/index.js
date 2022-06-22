@@ -2,16 +2,14 @@ import React, { useContext } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import AdminNav from './AdminNav';
 import { createStackNavigator } from '@react-navigation/stack';
-import StudentNav from './StudentNav';
 import { AdminClasses, Daignose, Login, OnBoarding, PreviousDiagnosis, Profile, SignUp, StudentList, SubjectByClassesList, SubjectList } from '../screens';
 import { colors } from '../constants/colors';
 import { AppContext } from '../context/AppContext';
-import TeacherNav from './TeacherNav';
 
 const MainStack = createStackNavigator()
 
 
-export default function AUHighSchool() {
+export default function CarFaultFinder() {
   const {state} = useContext(AppContext);
 
   return (
